@@ -1,0 +1,21 @@
+{
+  "name": "seveneves",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SevenEves — Roblox-like sandbox game platform",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:client": "pnpm --filter @seveneves/client dev",
+    "dev:server": "pnpm --filter @seveneves/server dev",
+    "dev:editor": "pnpm --filter @seveneves/editor dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "db:up": "docker compose up -d postgres redis",
+    "db:down": "docker compose down"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}
