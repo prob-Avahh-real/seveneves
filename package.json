@@ -4,6 +4,7 @@
   "private": true,
   "description": "SevenEves — Roblox-like sandbox game platform",
   "scripts": {
+    "test": "node --test tests/*.test.mjs",
     "dev": "pnpm -r --parallel run dev",
     "dev:client": "pnpm --filter @seveneves/client dev",
     "dev:server": "pnpm --filter @seveneves/server dev",

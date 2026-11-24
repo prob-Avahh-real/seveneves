@@ -39,3 +39,18 @@ build/
 
 # Logs
 *.log
+# Publish hygiene & bloat exclusions
+.env.*
+!.env.example
+.npm-cache/
+.build/
+DerivedData/
+.gradle/
+android/app/build/
+android/.gradle/
+android/local.properties
+ios/App/Pods/
+coverage/
+*.apk
+*.aab
+*.ipa
